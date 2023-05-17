@@ -6,7 +6,7 @@ import { BsStarFill } from "react-icons/bs"
 
 export async function loader({ request }) {
     await requireAuth(request)
-    return defer({ vans: getHostVans() })
+    return defer({ vans: getHostVans()})
 }
 
 export default function Dashboard() {
